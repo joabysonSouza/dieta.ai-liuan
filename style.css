@@ -10,6 +10,12 @@ body{
     overflow-x: hidden;
 }
 
+main{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
 .custom-button{
         width: 150px;
         height: 50px;
@@ -22,7 +28,6 @@ body{
         cursor: pointer;
       
 } 
-
 
 
 .content{
@@ -85,6 +90,26 @@ color: black;
 }
 
 
+.container-color-primary{
+    background-color: #000000ee;
+    color: white;
+
+}
+
+
+.sub-title{
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+
+.sub-title>img{
+    width: 30px;
+    padding: 4px;
+}
+
 @media(max-width:720px) {
     .nav-menu{
         display: none;
@@ -92,5 +117,21 @@ color: black;
     #nav-menu-bts{
         display: block;
     }
-    
+
+  
 }
+
+
+
+@media(min-width:640px){
+    #video{
+       max-width: 500px;
+    }
+
+    #cards{
+      display: grid;
+      flex-direction: row;
+    }
+}
+
+
