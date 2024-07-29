@@ -1,131 +1,49 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vídeo com Botão de Play</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Scroll Example</title>
     <style>
-        .video-container {
-            position: relative;
-            width: 100%;
-            max-width: 600px;
-            margin: auto;
-        }
-        .play-button {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: rgba(0, 0, 0, 0.5);
-            border: none;
-            color: white;
+        section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             font-size: 2rem;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #333;
+            color: #fff;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav button {
+            background: #555;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
             cursor: pointer;
         }
-
-        #cards>div{
-            width: 200px;
-            display: grid;
-            
-        }
-
-        #cards>p{
-            width: 100px;
-            display: grid;
-           grid-template-columns: 100px 100px 100px 100px;
-
+        nav button:hover {
+            background: #777;
         }
     </style>
 </head>
 <body>
-    
-
-
-
-   
-
-      
-
-
-        <div class="container text-center">
-          <div class="row">
-            <div class="col">
-              Column
-            </div>
-            <div class="col">
-              Column
-            </div>
-            <div class="col">
-              Column
-            </div>
-          </div>
-        </div>
-
-
-
-
-        <section class="w-100 h-100 d-flex flex-column  " id="cards">
-          <p class="sub-title d-flex justify-content-center">Funcionalidades</p>
-  
-          <div class="mb-2 p-3">
-            <p>Registro de exercicios
-            Lorem, ipsum dolor sit amet consectetur adipi amet consectetur adipi amet consectetur adipi</p>
-          </div>
-  
-          <p class="sub-title d-flex justify-content-center align-items-center">Registro de medidas  <img src="images/chart-increasing.png" alt=""></p>
-  
-          <div class="mb-2 p-3">
-            <span>Registro de exercicios
-            Lorem, ipsum dolor sit amet consectetur adipi amet consectetur adipi amet consectetur adipi</span>
-          </div>
-  
-        
-  
-          <p class="sub-title d-flex justify-content-center align-items-center">Defina metas <img src="images/trophy.png" alt=""></p>
-  
-          <div class="mb-2 p-3">
-            <span>Registro de exercicios
-            Lorem, ipsum dolor sit amet consectetur adipi amet consectetur adipi amet consectetur adipi</span>
-          </div>
-  
-          <p class="sub-title d-flex justify-content-center align-items-center">Assistente com AI <img src="images/robot.png" alt=""></p>
-  
-          <div class="mb-2 p-3">
-            <span>Registro de exercicios
-            Lorem, ipsum dolor sit amet consectetur adipi amet consectetur adipi amet consectetur adipi</span>
-          </div>
-  
-  
-  
-          <p class="sub-title d-flex justify-content-center align-items-center">Cadraste receitas <img src="images/closed-book.png" alt=""></p>
-  
-          <div class="mb-2 p-3">
-            <span>Registro de exercicios
-            Lorem, ipsum dolor sit amet consectetur adipi amet consectetur adipi amet consectetur adipi</span>
-          </div>
-  
-  
-  
-          
-        </section>
-
-
-
-    <!-- Bootstrap JS e jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-     
-    <script>
-        document.getElementById('playButton').addEventListener('click', function() {
-            var video = document.getElementById('video');
-            if (video.paused) {
-                video.play();
-                this.style.display = 'none';
-            }
-        });
-    </script>
+    <nav>
+        <button data-target="section1" onclick="teste()">Seção 1</button>
+        <button data-target="section2">Seção 2</button>
+        <button data-target="section3">Seção 3</button>
+    </nav>
+    <section id="section1" > <p class="count">0</p>  <span>milK</span></section>
+    <section id="section2">Seção <p class="count"> 2</p> 2</section>
+    <section id="section3">Seção 3</section>
+    <script src="script.js"></script>
 </body>
 </html>

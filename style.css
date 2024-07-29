@@ -110,6 +110,12 @@ color: black;
     padding: 4px;
 }
 
+.icone{
+    width: 30px;
+}
+
+
+
 @media(max-width:720px) {
     .nav-menu{
         display: none;
@@ -117,6 +123,22 @@ color: black;
     #nav-menu-bts{
         display: block;
     }
+
+    #cards{
+        width: 80%;
+     
+
+      }
+
+    #cards>div{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    
+      }
+     
+
+     
 
   
 }
@@ -128,10 +150,7 @@ color: black;
        max-width: 500px;
     }
 
-    #cards{
-      display: grid;
-      flex-direction: row;
-    }
+   
 }
 
 
