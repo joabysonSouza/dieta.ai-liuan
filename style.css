@@ -2,7 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
+
+
 
 body{
     width: 100vw;
@@ -14,6 +17,16 @@ main{
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.bg-gray{
+    background-color: rgba(32, 189, 189, 0.952);
 }
 
 .custom-button{
@@ -114,6 +127,11 @@ color: black;
     width: 30px;
 }
 
+#precos{
+    background-color: rgba(240, 248, 255, 0.87);
+  
+}
+
 
 
 @media(max-width:720px) {
@@ -136,7 +154,8 @@ color: black;
         text-align: center;
     
       }
-     
+
+   
 
      
 
@@ -149,6 +168,9 @@ color: black;
     #video{
        max-width: 500px;
     }
+   
+        
+    
 
    
 }
