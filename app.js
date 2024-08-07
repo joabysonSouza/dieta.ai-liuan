@@ -1,38 +1,31 @@
 
 
+// scroll menu
+
+document.getElementById("menu-funcionalidades").addEventListener("click", function(){
+    document.getElementById("funcionalidades").scrollIntoView({behavior:"smooth"})
+})
+
+document.getElementById("menu-precos").addEventListener("click", function(){
+    document.getElementById("precos").scrollIntoView({behavior:"smooth"})
+})
+
+// scroll menu para dispositivos maiores 
+
+
+document.getElementById("menu-funcionalidade-sm").addEventListener("click", function(){
+    document.getElementById("funcionalidades").scrollIntoView({behavior:"smooth"})
+})
+
+document.getElementById("menu-precos-sm").addEventListener("click", function(){
+    document.getElementById("precos").scrollIntoView({behavior:"smooth"})
+})
 
 
 
 
-document.addEventListener('DOMContentLoaded', function() {
-    const button = document.getElementById('butaoTeste');
-
-    if (button) {
-        button.addEventListener('click', function() {
-            console.log('clicou');
-        });
-    }
-});
 
 
-
-
-document.addEventListener("DOMContentLoaded", function () {
-    const buttons = document.querySelectorAll("nav button");
-  
-    buttons.forEach((button) => {
-      button.addEventListener("click", function () {
-        const targetId = this.getAttribute("data-target");
-        const targetElement = document.getElementById(targetId);
-  
-        if (targetElement) {
-          targetElement.scrollIntoView({
-            behavior: "smooth",
-          });
-        }
-      });
-    });
-  });
   
   function countNumber() {
       const textecount = document.querySelectorAll(".count");
